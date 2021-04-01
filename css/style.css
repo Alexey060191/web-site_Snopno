@@ -1,0 +1,653 @@
+html, body {
+    font-family: 'Montserrat','Raleway', sans-serif;
+    font-size: 16px;
+    color: #afb1b1;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    padding: 0;
+}
+
+.conteiner {
+    background-color: #eff0f2;
+    min-height: 800px;
+    /* border: 2px solid blue; */
+}
+
+.row {
+    max-width: 1170px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+/* ---------------header start-------------- */
+.header-1 {
+    display: flex;
+    min-height: 111px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 15px;
+    border-bottom: 1px solid #afb1b1;
+}
+
+.block-logo {
+    border: 5px solid #000;
+    margin-bottom: 10px;
+}
+
+/* -----nav start----- */
+.menu {
+    margin-bottom: 10px;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-list>li:hover .sub-menu-list {
+    display: block;
+}
+
+.sub-menu-link:hover {
+    background-color: cornflowerblue;
+}
+
+.menu li {
+    position: relative;
+}
+
+.sub-menu-list {
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding: 10px 30px 0 0;
+}
+
+.sub-menu-list>li {
+    background-color: #aae7e3;
+}
+
+.sub-menu-link {
+    display: inline-block;
+    padding: 7px 5px;
+}
+
+.sub-sub-menu-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    min-width: 200px;
+    padding: 0 5px 0 0;
+}
+
+.sub-sub-menu-list>li {
+    background-color: aquamarine;
+}
+
+.sub-menu-list>li:hover .sub-sub-menu-list {
+    display: block;
+}
+
+.sub-sub-menu-link {
+    display: inline-block;
+    padding: 7px 5px;
+}
+
+.sub-sub-menu-link:hover {
+    background-color: cornflowerblue;
+}
+/* -----nav end----- */
+
+.block-menu {
+    margin-bottom: 10px;
+}
+
+.block-logo p {
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.block-logo p span {
+    font-size: 21px;
+    color: #77efe5;
+    text-shadow: 1px 0 1px #c2cfd0, 
+    0 1px 1px #c2cfd0, 
+    -1px 0 1px #c2cfd0, 
+    0 -1px 1px #c2cfd0;
+}
+/* ---------------header end-------------- */
+
+/* -------------say-hello block start------ */
+.say-hello {
+    min-height: 689px;
+    text-align: center;
+    position: relative;
+}
+
+.say-hello p {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #505050;
+    text-shadow: 4px 4px 4px #c5c6c7, 
+    0 1px 1px #c5c6c7, 
+    -1px 0 1px #c5c6c7, 
+    0 -1px 1px #c5c6c7;
+    margin: 200px 0 150px 0;
+}
+
+.say-hello p span {
+    background: #aae7e3;
+}
+
+.contact-us {
+    border: 2px solid #777879;
+    padding: 18px 45px;
+    cursor: pointer;
+    letter-spacing: 4px;    
+}
+
+.contact-us:hover {
+    background: #000;
+    color: #fff;
+}
+
+.say-hello img {
+    position: absolute;
+    right: 112px;
+    bottom: 130px;
+}
+/* -------------say-hello block end------ */
+
+/* ---------------block-about-us start------------ */
+.block-about-us {
+    min-height: 980px;
+    background: #f8fafa;
+    text-align: center;
+}
+
+h3 {
+    font-size: 38px;
+    color: #000;
+    font-weight: bold;
+    padding-top: 125px;
+}
+
+.lorem {
+    text-transform: uppercase;
+    color: #848585;
+    font-size: 18px;
+    font-family: serif;
+    margin-bottom: 145px;
+}
+
+.discription {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* -----настройка слайдера slick start------------ */
+.slider {
+    width: 34.186%;
+    margin: 0 8.547%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slick-dots {
+    bottom: -40px !important;
+}
+.slick-dots li button::before {
+    content: url("../images/list_style_blue.png") !important;
+    /* list-style-image: url("../images/list_style_blue.png") !important; */
+}
+/* -----настройка слайдера slick end------------ */
+
+.amazing-works {
+    flex-basis: 48.72%;
+}
+
+.amazing-works h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+    color: #646565;
+    margin-bottom: 35px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.amazing-works p {
+    font-size: 16px;
+    color: #929393;
+    line-height: 1.5;
+    padding-left: 40px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.amazing-works .part-2 {
+    margin: 40px 0;
+}
+
+.amazing-works h5 {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #646565;
+    font-family: serif;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 40px;
+}
+/* ---------------block-about-us end------------ */
+
+/* ----------------block-featured-works start--------------- */
+.block-featured-works {
+    background: #fff;
+    min-height: 1160px;
+    text-align: center;
+}
+
+.works {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.works img {
+    margin-bottom: 15px;
+}
+/* ----------------block-featured-works end--------------- */
+
+/* -----------------block-our-services start--------------- */
+.block-our-services {
+    min-height: 1308px;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.special-block {
+    width: 652px;
+    height: 422px;
+    background: #71f5ea;
+    margin-bottom: 15px;
+}
+
+.black .discription .special-header {
+    color: #1d4a47;
+}
+
+.black .discription .special-paragraph {
+    color: #469d96;
+    line-height: 1.5;
+}
+
+.black .discription .special-paragraph::after {
+    content: "";
+}
+
+.details .black img {
+    margin-bottom: 15px;
+    filter: brightness(40%);
+}
+
+.black {
+   position: relative;
+}
+
+.black .discription {
+    display: block;
+    width: 64%;
+    position: absolute;
+    bottom: 50px;
+    left: 75px;
+    text-align: left;
+}
+
+.black .discription h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    /* text-align: left; */
+}
+
+.black .discription p {
+    color: #fff;
+    margin: 30px 0 60px 0;
+    /* text-align: left; */
+}
+
+.black .discription p:after {
+    content: " ...";
+}
+
+.black .discription .know-more, .button-cross {
+    background: none;
+    border: none;
+    font-size: 19px;
+    color: #dfdfde;
+    cursor: pointer;
+}
+
+.black .discription .know-more:hover {
+    color: #000;
+}
+
+.discription .arrows {
+    display: inline-block;
+    margin: 0 0 0 10px !important;
+    position: relative;
+    top: 5px;
+}
+/* -----------------block-our-services end--------------- */
+
+/* ----------------block-small-team start---------------- */
+.block-small-team {
+    text-align: center;
+    min-height: 1300px;
+    background: #fff;
+}
+
+.works-photo {
+    position: relative;
+}
+
+.comment-photo {
+    display: none;
+    width: 89.33%;
+    height: 54.55%;
+    background: #6ff6eb;
+    position: absolute;
+    top: 185px;
+    left: 21px;
+}
+/* при наведении/нажатии на блок появляется другой блок */
+.works-photo:hover .comment-photo {
+    display: block;
+}
+/* рисуем треугольник */
+.triangle {
+    position: absolute;
+    top: -30px;
+    left: 25px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #6ff6eb;
+}
+
+.comment-photo h4 {
+    font-size: 20px;
+    color: #272727;
+    margin: 40px 0 28px 0;
+    font-family: serif;
+}
+
+.comment-photo span {
+    font-size: 15px;
+    color: #767070;
+    font-style: italic;
+    font-family: serif;
+}
+
+.comment-photo p {
+    color: #215450;
+    margin-bottom: 40px;
+}
+
+.social-network img {
+    display: inline-block;
+    margin-right: 15px;
+}
+/* ----------------block-small-team end---------------- */
+
+/* -------------------block-what-they-says start---------- */
+.what-they-says {
+    text-align: center;
+    min-height: 800px;
+    background: #f9fbfb;
+}
+
+.block-1-slider {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 135px;
+}
+
+.slider-2 {
+    width: 27.35%;
+    margin: 0 4.27%;
+}
+
+.slider-3 {
+    width: 58.12%;
+    margin: 2.5% 2.99%;
+}
+
+.block-1-slider .slider-3 .slick-prev {
+    top: 394px;
+    left: 205px;
+}
+
+.block-1-slider .slider-3 .slick-next {
+    top: 394px;
+    right: 262px;;
+}
+
+.block-1-slider .slider-3 .slick-prev::before {
+    content: url(../images/arrows_slider_left.png);
+}
+
+.block-1-slider .slider-3 .slick-next::before {
+    content: url(../images/arrows_slider_right.png);  
+}
+
+.says {
+    width: 660px;
+    height: 360px;
+    background: #eaebed;
+}
+
+.says img {
+    display: inline-block;
+    margin: 0 auto 70px auto;
+    
+}
+
+.says h4 {
+    color: #1b1b1c;
+    font-family: serif;
+    margin-top: 100px;
+}
+
+.says span {
+    text-transform: uppercase;
+    font-family: serif;
+    font-style: italic;
+    color: #7f7f7f;
+}
+
+.says p{
+    margin: 30px 85px 35px 85px;
+    text-transform: none;
+    color: #696a6b;
+    line-height: 1.5;
+}
+/* -------------------block-what-they-says end---------- */
+
+/* ------------------block-commercial start----------------- */
+.block-commercial {
+    min-height: 385px;
+    background: #fff;
+}
+
+.block-commercial img {
+    width: 100%;
+    padding: 120px 15px 0 15px;
+    box-sizing: border-box;
+}
+/* ------------------block-commercial end-------------------- */
+
+/* ----------------block-info start------------------ */
+.block-info {
+    /* min-height: 705px; */
+    background-image: url(../images/cristmas_snow_trees.jpg);
+    background-size: cover;
+    opacity: .7;
+}
+
+.setting-block-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.block-registration {
+    width: 52.48%;
+    margin: 100px 1.28%;
+    background: rgb(74, 89, 98, .6);
+    /* opacity: 0.6;  */
+}
+
+.block-location {
+    width: 42.4%;
+    margin: 100px 1.28%;
+    /* для установки прозрачности родительского блока но не дочерних блоков,используем rgb! */
+    background: rgb(74, 89, 98, .6); 
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 2px solid #fff;
+    /* для прозрачного фона полей формы*/
+    background-color: transparent;
+    margin: 0 30px 0px 30px;
+    width: 90%;
+}
+
+input:focus, textarea:focus {
+    background-color: transparent;
+}
+
+.my-form-1 p {
+    margin: 25px 0 0 30px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.submit {
+    width: 40%;
+    background: #6eeee4;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 30px;
+    cursor: pointer;
+    color:  rgb(1, 6, 15);
+    font-weight: bold;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin: 15px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.block-location p {
+    margin: 30px;
+    line-height: 1.5em;
+    font-size: 15px;
+    color: #fff;
+}
+
+.block-location a {
+    color: #fff;
+}
+/* ----------------block-info end------------------ */
+
+/* ---------------footer start------------- */
+.my-footer-1 {
+    min-height: 300px;
+    background: #262b2e;
+    text-align: center;
+}
+
+.my-footer-1 div, img {
+    display: inline-block;
+}
+
+.foolow-us {
+    padding-top: 90px;
+}
+
+.logo-footer {
+    width: 45px;
+    height: 45px;
+    background: #3f4244;
+    position: relative;
+    margin: 15px 5px 40px 0;
+
+}
+
+.logo-footer img {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
+
+.logo-footer:hover {
+    background: #6eeee4;
+    cursor: pointer;
+}
+/* ---------------footer end--------------- */
